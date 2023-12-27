@@ -1,0 +1,37 @@
+Métodos y Funciones Incorporadas de Python:
+Para tipos de datos básicos:
+
+    Métodos de listas (list):
+        append(), extend(), insert(), remove(), pop(), index(), count(), sort(), reverse(), etc.
+
+    Métodos de cadenas (str):
+        capitalize(), lower(), upper(), strip(), split(), replace(), find(), join(), etc.
+
+    Métodos de tuplas (tuple):
+        index(), count(), etc.
+
+    Métodos de diccionarios (dict):
+        keys(), values(), items(), get(), pop(), update(), etc.
+
+    Métodos de conjuntos (set):
+        add(), remove(), discard(), pop(), union(), intersection(), difference(), etc.
+
+Funciones y métodos integrados:
+
+    Funciones incorporadas comunes:
+        len(), type(), max(), min(), sum(), range(), enumerate(), zip(), sorted(), etc.
+
+    Funciones de conversión de tipos de datos:
+        int(), float(), str(), list(), tuple(), dict(), set(), etc.
+
+    Funciones matemáticas y de cálculo:
+        abs(), round(), pow(), divmod(), min(), max(), etc.
+
+    Funciones para manejo de archivos y directorios:
+        open(), read(), write(), close(), os.path() (módulo os), os.listdir(), os.mkdir(), os.rmdir(), etc.
+
+    Funciones para control de flujo:
+        range(), map(), filter(), sorted(), any(), all(), eval(), print(), etc.
+
+    Funciones para manejo de tiempo y fechas:
+        time(), datetime(), strftime(), strptime(), timedelta(), etc. (módulos time y datetime)
