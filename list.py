@@ -11,3 +11,5 @@ def print_list2():
     print (names[:13], end=" ")
     print (len(names))
 print_list2()   
+#print names whitout [] and ''
+print(f"This is a name list: {" ".join(names)}")
