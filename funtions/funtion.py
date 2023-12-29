@@ -1,5 +1,3 @@
-homesList = {}
-
 def ingresoCasas() -> int:
     try:
         casa = input("ingrese el numero de la casa: ")
@@ -12,35 +10,18 @@ def nombrePropietario() -> str:
     nombrePropietario = input("ingrese el nombre del propietario: ")
     return str(nombrePropietario)
 
-def casas (homesList) -> dict:
-
-    numCasas = 0
-    try:
-
-        ingresos = int(input("¿Cuántas casas desea ingresar?: "))
-    
-    except ValueError:
-    
-        print("El valor ingresado no es válido")
-    
-        return None, None
-    
+def casas(homesList) -> dict:
+    ingresos = int(input("¿Cuántas casas desea ingresar?: "))
     for _ in range(ingresos):
-        numCasas += 1
-        
-        casa = ingresoCasas()
-        if casa is None: break
-       
-        
-        propietario = nombrePropietario() 
-        homesList[casa] = propietario  
+        key = ingresoCasas()
+        if key is int:
+            value = nombrePropietario()
+            homesList[key] = value
+    return homesList
 
-    return homesList, numCasas
 
-def main(homesList) -> dict:
-    homesList, _ = casas(homesList)
-    print(homesList)
 
+homesList = {}
 
 while True:
     cases = int(input(" Salir = 1 \n Ingresar casas = 2: "))
@@ -48,7 +29,7 @@ while True:
         case 1:
             print(homesList)
         case 2:
-            main(homesList)
+            homesList = casas(homesList)
 
 
 def lista(*args):
