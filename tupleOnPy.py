@@ -15,4 +15,13 @@ numbers = (1,2,3,4,5,6,7,8,9,10)
 for i in numbers:
     if i < 5:
         list_numbers.append(i)
-        print(list_numbers) 
+        print(list_numbers)
+
+nombre = input("ingrese el nombre a consultar: ")    
+
+if nombre in names:
+    print("Jane is in the tuple")
+
+#discard no arroja error en caso de no encontrar el valor
+#remove arroja error en caso de no encontrar el valor
+#del lo borra completamente
